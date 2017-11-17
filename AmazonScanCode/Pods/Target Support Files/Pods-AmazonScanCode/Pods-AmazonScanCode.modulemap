@@ -1,6 +1,0 @@
-framework module Pods_AmazonScanCode {
-  umbrella header "Pods-AmazonScanCode-umbrella.h"
-
-  export *
-  module * { export * }
-}
