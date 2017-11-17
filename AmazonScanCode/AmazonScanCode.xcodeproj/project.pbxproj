@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D0243BF1F61D54B00C63ADE /* AMZWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0243BE1F61D54B00C63ADE /* AMZWebViewController.swift */; };
+		1D0243C21F61D62400C63ADE /* AMZRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0243C11F61D62400C63ADE /* AMZRootViewController.swift */; };
+		1D076D921F533CC5007F77CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D076D911F533CC5007F77CF /* AppDelegate.swift */; };
+		1D076D941F533CC5007F77CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D076D931F533CC5007F77CF /* ViewController.swift */; };
+		1D076D971F533CC5007F77CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D076D951F533CC5007F77CF /* Main.storyboard */; };
+		1D076D991F533CC5007F77CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D076D981F533CC5007F77CF /* Assets.xcassets */; };
+		1D076D9C1F533CC5007F77CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D076D9A1F533CC5007F77CF /* LaunchScreen.storyboard */; };
+		1D076DA71F533CC5007F77CF /* AmazonScanCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D076DA61F533CC5007F77CF /* AmazonScanCodeTests.swift */; };
+		1D076DB21F533CC5007F77CF /* AmazonScanCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D076DB11F533CC5007F77CF /* AmazonScanCodeUITests.swift */; };
+		1DACC0651F534C2E004DC356 /* webView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DACC0641F534C2E004DC356 /* webView.swift */; };
+		1DACC0681F534E92004DC356 /* AMZScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DACC0671F534E92004DC356 /* AMZScanViewController.swift */; };
+		1DDAEBA61FBCB0530059972D /* AMZProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAEBA51FBCB0530059972D /* AMZProductDetailViewController.swift */; };
+		1DDAEBA91FBCB15E0059972D /* AMZUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAEBA81FBCB15E0059972D /* AMZUtil.swift */; };
+		1DDAEBAC1FBCC4B10059972D /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DDAEBAB1FBCBAAD0059972D /* products.json */; };
+		1DDAEBAF1FBCC7000059972D /* AMZProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAEBAE1FBCC7000059972D /* AMZProductModel.swift */; };
+		F32C1ED01A5EF8AE4E0D9CC6 /* Pods_AmazonScanCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAB79404A6A2DF2E8B69889 /* Pods_AmazonScanCode.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D076DA31F533CC5007F77CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D076D861F533CC5007F77CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D076D8D1F533CC5007F77CF;
+			remoteInfo = AmazonScanCode;
+		};
+		1D076DAE1F533CC5007F77CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D076D861F533CC5007F77CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D076D8D1F533CC5007F77CF;
+			remoteInfo = AmazonScanCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D0243BE1F61D54B00C63ADE /* AMZWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMZWebViewController.swift; sourceTree = "<group>"; };
+		1D0243C11F61D62400C63ADE /* AMZRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMZRootViewController.swift; sourceTree = "<group>"; };
+		1D076D8E1F533CC5007F77CF /* AmazonScanCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonScanCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D076D911F533CC5007F77CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D076D931F533CC5007F77CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D076D961F533CC5007F77CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D076D981F533CC5007F77CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D076D9B1F533CC5007F77CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D076D9D1F533CC5007F77CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D076DA21F533CC5007F77CF /* AmazonScanCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazonScanCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D076DA61F533CC5007F77CF /* AmazonScanCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonScanCodeTests.swift; sourceTree = "<group>"; };
+		1D076DA81F533CC5007F77CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D076DAD1F533CC5007F77CF /* AmazonScanCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazonScanCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D076DB11F533CC5007F77CF /* AmazonScanCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonScanCodeUITests.swift; sourceTree = "<group>"; };
+		1D076DB31F533CC5007F77CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DACC0641F534C2E004DC356 /* webView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webView.swift; sourceTree = "<group>"; };
+		1DACC0671F534E92004DC356 /* AMZScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMZScanViewController.swift; sourceTree = "<group>"; };
+		1DDAEBA51FBCB0530059972D /* AMZProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMZProductDetailViewController.swift; sourceTree = "<group>"; };
+		1DDAEBA81FBCB15E0059972D /* AMZUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMZUtil.swift; sourceTree = "<group>"; };
+		1DDAEBAB1FBCBAAD0059972D /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		1DDAEBAE1FBCC7000059972D /* AMZProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMZProductModel.swift; sourceTree = "<group>"; };
+		4FAB79404A6A2DF2E8B69889 /* Pods_AmazonScanCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazonScanCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DF85DDA7F9BF6357C6B5AF /* Pods-AmazonScanCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonScanCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmazonScanCode/Pods-AmazonScanCode.release.xcconfig"; sourceTree = "<group>"; };
+		F64BFB723B2CB06207D32373 /* Pods-AmazonScanCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonScanCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmazonScanCode/Pods-AmazonScanCode.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D076D8B1F533CC5007F77CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32C1ED01A5EF8AE4E0D9CC6 /* Pods_AmazonScanCode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D076D9F1F533CC5007F77CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D076DAA1F533CC5007F77CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D0243BD1F61D53100C63ADE /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				1D0243BE1F61D54B00C63ADE /* AMZWebViewController.swift */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
+		1D0243C01F61D5EF00C63ADE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1D076D951F533CC5007F77CF /* Main.storyboard */,
+				1D076D911F533CC5007F77CF /* AppDelegate.swift */,
+				1D0243C11F61D62400C63ADE /* AMZRootViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		1D076D851F533CC5007F77CF = {
+			isa = PBXGroup;
+			children = (
+				1D076D901F533CC5007F77CF /* AmazonScanCode */,
+				1D076DA51F533CC5007F77CF /* AmazonScanCodeTests */,
+				1D076DB01F533CC5007F77CF /* AmazonScanCodeUITests */,
+				1D076D8F1F533CC5007F77CF /* Products */,
+				E9BC942276B4ABB64BFBDD8E /* Pods */,
+				3BCCF103826390F086DE14EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D076D8F1F533CC5007F77CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D076D8E1F533CC5007F77CF /* AmazonScanCode.app */,
+				1D076DA21F533CC5007F77CF /* AmazonScanCodeTests.xctest */,
+				1D076DAD1F533CC5007F77CF /* AmazonScanCodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D076D901F533CC5007F77CF /* AmazonScanCode */ = {
+			isa = PBXGroup;
+			children = (
+				1DDAEBAA1FBCBA800059972D /* Data */,
+				1DDAEBA71FBCB1450059972D /* Util */,
+				1DDAEBA31FBCB0000059972D /* Products */,
+				1D0243C01F61D5EF00C63ADE /* Main */,
+				1D0243BD1F61D53100C63ADE /* Web */,
+				1DACC0661F534E0F004DC356 /* ScanCode */,
+				1D076D931F533CC5007F77CF /* ViewController.swift */,
+				1DACC0641F534C2E004DC356 /* webView.swift */,
+				1D076D981F533CC5007F77CF /* Assets.xcassets */,
+				1D076D9A1F533CC5007F77CF /* LaunchScreen.storyboard */,
+				1D076D9D1F533CC5007F77CF /* Info.plist */,
+			);
+			path = AmazonScanCode;
+			sourceTree = "<group>";
+		};
+		1D076DA51F533CC5007F77CF /* AmazonScanCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D076DA61F533CC5007F77CF /* AmazonScanCodeTests.swift */,
+				1D076DA81F533CC5007F77CF /* Info.plist */,
+			);
+			path = AmazonScanCodeTests;
+			sourceTree = "<group>";
+		};
+		1D076DB01F533CC5007F77CF /* AmazonScanCodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D076DB11F533CC5007F77CF /* AmazonScanCodeUITests.swift */,
+				1D076DB31F533CC5007F77CF /* Info.plist */,
+			);
+			path = AmazonScanCodeUITests;
+			sourceTree = "<group>";
+		};
+		1DACC0661F534E0F004DC356 /* ScanCode */ = {
+			isa = PBXGroup;
+			children = (
+				1DACC0671F534E92004DC356 /* AMZScanViewController.swift */,
+			);
+			name = ScanCode;
+			sourceTree = "<group>";
+		};
+		1DDAEBA31FBCB0000059972D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DDAEBAD1FBCC6E90059972D /* Models */,
+				1DDAEBA41FBCB0220059972D /* Detail */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DDAEBA41FBCB0220059972D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1DDAEBA51FBCB0530059972D /* AMZProductDetailViewController.swift */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		1DDAEBA71FBCB1450059972D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1DDAEBA81FBCB15E0059972D /* AMZUtil.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		1DDAEBAA1FBCBA800059972D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1DDAEBAB1FBCBAAD0059972D /* products.json */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		1DDAEBAD1FBCC6E90059972D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DDAEBAE1FBCC7000059972D /* AMZProductModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3BCCF103826390F086DE14EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FAB79404A6A2DF2E8B69889 /* Pods_AmazonScanCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9BC942276B4ABB64BFBDD8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F64BFB723B2CB06207D32373 /* Pods-AmazonScanCode.debug.xcconfig */,
+				92DF85DDA7F9BF6357C6B5AF /* Pods-AmazonScanCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D076D8D1F533CC5007F77CF /* AmazonScanCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D076DB61F533CC5007F77CF /* Build configuration list for PBXNativeTarget "AmazonScanCode" */;
+			buildPhases = (
+				0B146777B1D83E9CB39C82C4 /* [CP] Check Pods Manifest.lock */,
+				1D076D8A1F533CC5007F77CF /* Sources */,
+				1D076D8B1F533CC5007F77CF /* Frameworks */,
+				1D076D8C1F533CC5007F77CF /* Resources */,
+				0922DE901599C25B05423E02 /* [CP] Embed Pods Frameworks */,
+				AB3039B158A926F99F3864A2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmazonScanCode;
+			productName = AmazonScanCode;
+			productReference = 1D076D8E1F533CC5007F77CF /* AmazonScanCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D076DA11F533CC5007F77CF /* AmazonScanCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D076DB91F533CC5007F77CF /* Build configuration list for PBXNativeTarget "AmazonScanCodeTests" */;
+			buildPhases = (
+				1D076D9E1F533CC5007F77CF /* Sources */,
+				1D076D9F1F533CC5007F77CF /* Frameworks */,
+				1D076DA01F533CC5007F77CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D076DA41F533CC5007F77CF /* PBXTargetDependency */,
+			);
+			name = AmazonScanCodeTests;
+			productName = AmazonScanCodeTests;
+			productReference = 1D076DA21F533CC5007F77CF /* AmazonScanCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D076DAC1F533CC5007F77CF /* AmazonScanCodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D076DBC1F533CC5007F77CF /* Build configuration list for PBXNativeTarget "AmazonScanCodeUITests" */;
+			buildPhases = (
+				1D076DA91F533CC5007F77CF /* Sources */,
+				1D076DAA1F533CC5007F77CF /* Frameworks */,
+				1D076DAB1F533CC5007F77CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D076DAF1F533CC5007F77CF /* PBXTargetDependency */,
+			);
+			name = AmazonScanCodeUITests;
+			productName = AmazonScanCodeUITests;
+			productReference = 1D076DAD1F533CC5007F77CF /* AmazonScanCodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D076D861F533CC5007F77CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = yonghao;
+				TargetAttributes = {
+					1D076D8D1F533CC5007F77CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3TDU6G9DPJ;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					1D076DA11F533CC5007F77CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1D076D8D1F533CC5007F77CF;
+					};
+					1D076DAC1F533CC5007F77CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1D076D8D1F533CC5007F77CF;
+					};
+				};
+			};
+			buildConfigurationList = 1D076D891F533CC5007F77CF /* Build configuration list for PBXProject "AmazonScanCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D076D851F533CC5007F77CF;
+			productRefGroup = 1D076D8F1F533CC5007F77CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D076D8D1F533CC5007F77CF /* AmazonScanCode */,
+				1D076DA11F533CC5007F77CF /* AmazonScanCodeTests */,
+				1D076DAC1F533CC5007F77CF /* AmazonScanCodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D076D8C1F533CC5007F77CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDAEBAC1FBCC4B10059972D /* products.json in Resources */,
+				1D076D9C1F533CC5007F77CF /* LaunchScreen.storyboard in Resources */,
+				1D076D991F533CC5007F77CF /* Assets.xcassets in Resources */,
+				1D076D971F533CC5007F77CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D076DA01F533CC5007F77CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D076DAB1F533CC5007F77CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0922DE901599C25B05423E02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AmazonScanCode/Pods-AmazonScanCode-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmazonScanCode/Pods-AmazonScanCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B146777B1D83E9CB39C82C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazonScanCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB3039B158A926F99F3864A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmazonScanCode/Pods-AmazonScanCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D076D8A1F533CC5007F77CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDAEBAF1FBCC7000059972D /* AMZProductModel.swift in Sources */,
+				1D0243BF1F61D54B00C63ADE /* AMZWebViewController.swift in Sources */,
+				1D0243C21F61D62400C63ADE /* AMZRootViewController.swift in Sources */,
+				1D076D941F533CC5007F77CF /* ViewController.swift in Sources */,
+				1DACC0651F534C2E004DC356 /* webView.swift in Sources */,
+				1DACC0681F534E92004DC356 /* AMZScanViewController.swift in Sources */,
+				1DDAEBA61FBCB0530059972D /* AMZProductDetailViewController.swift in Sources */,
+				1DDAEBA91FBCB15E0059972D /* AMZUtil.swift in Sources */,
+				1D076D921F533CC5007F77CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D076D9E1F533CC5007F77CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D076DA71F533CC5007F77CF /* AmazonScanCodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D076DA91F533CC5007F77CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D076DB21F533CC5007F77CF /* AmazonScanCodeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D076DA41F533CC5007F77CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D076D8D1F533CC5007F77CF /* AmazonScanCode */;
+			targetProxy = 1D076DA31F533CC5007F77CF /* PBXContainerItemProxy */;
+		};
+		1D076DAF1F533CC5007F77CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D076D8D1F533CC5007F77CF /* AmazonScanCode */;
+			targetProxy = 1D076DAE1F533CC5007F77CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D076D951F533CC5007F77CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D076D961F533CC5007F77CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D076D9A1F533CC5007F77CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D076D9B1F533CC5007F77CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D076DB41F533CC5007F77CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D076DB51F533CC5007F77CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D076DB71F533CC5007F77CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F64BFB723B2CB06207D32373 /* Pods-AmazonScanCode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TDU6G9DPJ;
+				INFOPLIST_FILE = AmazonScanCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yonghao.AmazonScanCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1D076DB81F533CC5007F77CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92DF85DDA7F9BF6357C6B5AF /* Pods-AmazonScanCode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TDU6G9DPJ;
+				INFOPLIST_FILE = AmazonScanCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yonghao.AmazonScanCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		1D076DBA1F533CC5007F77CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AmazonScanCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yonghao.AmazonScanCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazonScanCode.app/AmazonScanCode";
+			};
+			name = Debug;
+		};
+		1D076DBB1F533CC5007F77CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AmazonScanCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yonghao.AmazonScanCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazonScanCode.app/AmazonScanCode";
+			};
+			name = Release;
+		};
+		1D076DBD1F533CC5007F77CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AmazonScanCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yonghao.AmazonScanCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = AmazonScanCode;
+			};
+			name = Debug;
+		};
+		1D076DBE1F533CC5007F77CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AmazonScanCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yonghao.AmazonScanCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = AmazonScanCode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D076D891F533CC5007F77CF /* Build configuration list for PBXProject "AmazonScanCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D076DB41F533CC5007F77CF /* Debug */,
+				1D076DB51F533CC5007F77CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D076DB61F533CC5007F77CF /* Build configuration list for PBXNativeTarget "AmazonScanCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D076DB71F533CC5007F77CF /* Debug */,
+				1D076DB81F533CC5007F77CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D076DB91F533CC5007F77CF /* Build configuration list for PBXNativeTarget "AmazonScanCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D076DBA1F533CC5007F77CF /* Debug */,
+				1D076DBB1F533CC5007F77CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D076DBC1F533CC5007F77CF /* Build configuration list for PBXNativeTarget "AmazonScanCodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D076DBD1F533CC5007F77CF /* Debug */,
+				1D076DBE1F533CC5007F77CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D076D861F533CC5007F77CF /* Project object */;
+}
