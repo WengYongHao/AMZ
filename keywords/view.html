@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript" src="controller.js"></script>	
+
+	<style type="text/css">
+
+		@import url(model.css);
+		
+	</style>
+</head>
+<body>
+
+
+<div class="originKWAreaBg">
+	<p>Keywords</p>
+	<textarea id="originKWs" class="originKWArea"></textarea>
+	<p>except Keywords</p>
+	<textarea id="exceptKWs" class="originKWArea"></textarea>
+	<script>
+		intailSetting();
+	</script>
+	<div>
+		<button onclick="printResultsStr()">GetString</button>
+		<button onclick="printResultsWords()">GetWords</button>
+		
+	</div>
+
+	<div id="result"></div>
+</div>
+
+
+<!-- <div class="operatorNav">
+	
+</div> -->
+
+
+
+
+
+
+</body>
+</html>
