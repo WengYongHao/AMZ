@@ -40,9 +40,12 @@ function unique2(array){
 
 function getOriginKWs() {
 	var keywordsString = document.getElementById('originKWs').value;
+	keywordsString = keywordsString.replace(/[,，/]/g, " ");
 	keywordsString = keywordsString.replace(/\ +/g, "\n");
 	keywordsString = keywordsString.replace(/[\r\n]/g, " ");
+
 	var wordsArr = keywordsString.split(" ");
+
 
 	return wordsArr;
 }
