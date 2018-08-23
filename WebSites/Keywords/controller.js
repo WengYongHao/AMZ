@@ -61,34 +61,64 @@ function getDeleteKWs(deleteItemsString) {
 	return wordsArr;
 }
 
-function getCount() {
-	var count = Number(document.getElementByName('Count').value);
-	return count;
-}
 
 function getResult(){
 	
 	var originKWs = getOriginKWs(document.getElementById('originKWs').value);
 	
-	var temp = unique2(originKWs);
-
-	for (var i = temp.length - 1; i >= 0; i--) {
-		
-	}
-
+	// var temp = unique2(originKWs);
 
 	var deleteItems = getDeleteKWs(document.getElementById('exceptKWs').value);
 
-	
-
-	temp = array_diff(temp, deleteItems);
+	// temp = array_diff(temp, deleteItems);
 
 	
-	for (var i = temp.length - 1; i >= 0; i--) {
-		deleteItems.push(temp[i]+"s");
+	// for (var i = temp.length - 1; i >= 0; i--) {
+	// 	deleteItems.push(temp[i]+"s");
+	// }
+
+	// var result = array_diff(temp, deleteItems);
+
+
+	var count =  parseInt(document.getElementById('Count'));
+
+	var AllkeyWords = unique2(originKWs);
+	AllkeyWords = array_diff(AllkeyWords, deleteItems);
+
+	for (var i = AllkeyWords.length - 1; i >= 0; i--) {
+		deleteItems.push(AllkeyWords[i]+"s");
 	}
 
-	var result = array_diff(temp, deleteItems);
+	var result = array_diff(AllkeyWords, deleteItems);
+
+
+
+
+	// for (var i = 0; i < AllkeyWords.length; i+=count) {
+	// 	var topKWs = ["Yes"];
+
+	// 	if (i+count > AllkeyWords.length) {
+	// 		topKWs = AllkeyWords.slice(i, AllkeyWords.length-1);
+			
+	// 	}
+	// 	else {
+	// 		topKWs = AllkeyWords.slice(i, i+count-1);
+		
+	// 	}
+
+	// 	topKWs = array_diff(topKWs, deleteItems);
+
+		
+	// 	for (var i = topKWs.length - 1; i >= 0; i--) {
+	// 		deleteItems.push(topKWs[i]+"s");
+	// 	}
+
+	// 	var topKWResults = array_diff(topKWs, deleteItems);
+
+		
+	// }
+
+
 
 	return result;
 }
