@@ -8,6 +8,7 @@ function intailSetting() {
 	document.getElementById('exceptKWs').innerHTML = "best\nfor\nby\nstore\nbuy\nsale\nnew\na\nan\nand\nby\nfor\nof\nthe\nwith\ngood\namazon\nuk\nfba";
 }
 
+//删除b数组中的
 function array_diff(a, b) {
     for(var i=0;i<b.length;i++)
     {
@@ -22,6 +23,7 @@ function array_diff(a, b) {
 	return a;
 }
 
+// 去除重复
 function unique2(array){
 		var n = {}, r = [], len = array.length, val, type;
   	for (var i = 0; i < array.length; i++) {
@@ -38,8 +40,8 @@ function unique2(array){
 		return r;
 }
 
-function getOriginKWs() {
-	var keywordsString = document.getElementById('originKWs').value;
+function getOriginKWs(keywordsString) {
+
 	keywordsString = keywordsString.replace(/[,，/]/g, " ");
 	keywordsString = keywordsString.replace(/\ +/g, "\n");
 	keywordsString = keywordsString.replace(/[\r\n]/g, " ");
@@ -50,28 +52,37 @@ function getOriginKWs() {
 	return wordsArr;
 }
 
-function getDeleteKWs() {
-	var deleteItemsString = document.getElementById('exceptKWs').value;
+function getDeleteKWs(deleteItemsString) {
+	
+	deleteItemsString = deleteItemsString.replace(/[,，/]/g, " ");
 	deleteItemsString = deleteItemsString.replace(/\ +/g, "\n");
 	deleteItemsString = deleteItemsString.replace(/[\r\n]/g, " ");
 	var wordsArr = deleteItemsString.split(" ");
-
 	return wordsArr;
 }
 
-
+function getCount() {
+	var count = Number(document.getElementByName('Count').value);
+	return count;
+}
 
 function getResult(){
-
-	// var $textArea = $('#originKWs');
 	
-	var originKWs = getOriginKWs();
+	var originKWs = getOriginKWs(document.getElementById('originKWs').value);
 	
 	var temp = unique2(originKWs);
 
-	var deleteItems = getDeleteKWs();
+	for (var i = temp.length - 1; i >= 0; i--) {
+		
+	}
+
+
+	var deleteItems = getDeleteKWs(document.getElementById('exceptKWs').value);
+
+	
 
 	temp = array_diff(temp, deleteItems);
+
 	
 	for (var i = temp.length - 1; i >= 0; i--) {
 		deleteItems.push(temp[i]+"s");
