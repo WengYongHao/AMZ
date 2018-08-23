@@ -41,7 +41,7 @@ function unique2(array){
 }
 
 function getOriginKWs(keywordsString) {
-
+	keywordsString = keywordsString.toLowerCase();
 	keywordsString = keywordsString.replace(/[,，/]/g, " ");
 	keywordsString = keywordsString.replace(/\ +/g, "\n");
 	keywordsString = keywordsString.replace(/[\r\n]/g, " ");
@@ -53,7 +53,7 @@ function getOriginKWs(keywordsString) {
 }
 
 function getDeleteKWs(deleteItemsString) {
-	
+	deleteItemsString = deleteItemsString.toLowerCase();
 	deleteItemsString = deleteItemsString.replace(/[,，/]/g, " ");
 	deleteItemsString = deleteItemsString.replace(/\ +/g, "\n");
 	deleteItemsString = deleteItemsString.replace(/[\r\n]/g, " ");
